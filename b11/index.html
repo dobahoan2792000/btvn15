@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr,td,table{
+            border: 1px solid red;
+            border-collapse: collapse;
+            background-color: blue;
+        }
+        form{
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend style="color: indianred;">Đăng Nhập</legend>
+            <table>
+                <tr>
+                    <td>Mã người dùng :</td>
+                    <td><input type="text" placeholder="Tên đăng nhập" id="tdn" ></td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu</td>
+                    <td><input type="password" placeholder="Mật khẩu" ></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center" id="bt"><input type="button" value="Đăng nhập" onclick="document.getElementById('dl').innerText= tdn.value "></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="dl" style="text-align:center"></td>
+                </tr>
+
+            </table>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
